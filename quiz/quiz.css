@@ -1,0 +1,94 @@
+:root {
+    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-primary: 'Kanit', sans-serif;
+    --font-secondary: 'Kanit', sans-serif;
+}
+
+/* Colors */
+:root {
+    --color-default: #212529;
+    --color-primary: #287EEF;
+    --color-secondary: #37373f;
+    --color-black: #000000;
+    --color-black-rgb: 0, 0, 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.bola, .bola2, .bola3, .bola4, .bola5, .bola6 {
+    width: 10vw; /* Adjust as needed */
+    height: 10vw; /* Adjust as needed */
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    border: 0.5vw solid var(--color-black);
+}
+
+.modal {
+    overflow: hidden;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2vw; /* Adjust as needed */
+    background-color: #fff;
+    border: 0.2vw solid var(--color-secondary);
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.5); /* Adjust as needed */
+    text-align: center;
+    font-family: var(--font-default);
+}
+
+button {
+    margin: 1vw; /* Adjust as needed */
+    padding: 1vw; /* Adjust as needed */
+    cursor: pointer;
+}
+
+.verde {
+    background-color: green;
+}
+
+.vermelha {
+    background-color: red;
+}
+
+.respondida {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+video {
+    height: 200px; /* Adjust as needed */
+    width: 250px; /* Adjust as needed */
+}
+
+@media screen and (max-width: 768px) {
+    /* Add styles specific to screens with a maximum width of 768px */
+    .bola, .bola2, .bola3, .bola4, .bola5, .bola6 {
+        width: 20vw; /* Adjust as needed for smaller screens */
+        height: 20vw; /* Adjust as needed for smaller screens */
+    }
+
+    .modal {
+        padding: 5vw; /* Adjust as needed for smaller screens */
+        border: 0.5vw solid var(--color-secondary);
+        box-shadow: 0 0 2vw rgba(0, 0, 0, 0.5); /* Adjust as needed for smaller screens */
+    }
+
+    button {
+        margin: 2vw; /* Adjust as needed for smaller screens */
+        padding: 2vw; /* Adjust as needed for smaller screens */
+    }
+
+    video {
+        height: 30vw; /* Adjust as needed for smaller screens */
+        width: 25vw; /* Adjust as needed for smaller screens */
+    }
+}
